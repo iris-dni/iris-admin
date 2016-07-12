@@ -1,0 +1,11 @@
+.DS_Store
+
+*.log
+
+public/bundle.js
+public/bundle.js.map
+
+node_modules/
+!app/node_modules/
+
+typings/

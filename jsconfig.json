@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": false,
+    "jsx": "react",
+    "reactNamespace": "React"
+  },
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
+}
