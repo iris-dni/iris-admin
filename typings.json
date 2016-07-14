@@ -7,6 +7,8 @@
   },
   "globalDevDependencies": {
     "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "enzyme": "registry:dt/enzyme#2.4.1+20160709041153",
+    "jsdom": "registry:dt/jsdom#2.0.0+20160316155526",
     "mocha": "registry:dt/mocha#2.2.5+20160619032855"
   }
 }
