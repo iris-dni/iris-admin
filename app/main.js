@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
@@ -13,3 +14,8 @@ ReactDOM.render(
   </Router>,
   document.getElementById('_root')
 );
+
+// show the sidebar on wide screens
+if (document.body.clientWidth > 768) {
+  document.body.classList.add('sidebar-is-open');
+}

@@ -26,7 +26,7 @@ const OUT_DIR = path.resolve(__dirname, 'public');
 module.exports = {
   entry: APP_DIR + '/main',
   output: {
-    path: __dirname + '/public',
+    path: OUT_DIR,
     filename: 'bundle.js'
   },
   resolve: {
