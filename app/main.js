@@ -3,6 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import PetitionFinder from 'pages/petition-finder';
+import UserFinder from 'pages/user-finder';
 import App from './app';
 
 ReactDOM.render(
@@ -10,6 +11,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRedirect to="petitions" />
       <Route path="petitions" component={PetitionFinder} />
+      <Route path="users" component={UserFinder} />
     </Route>
   </Router>,
   document.getElementById('_root')
