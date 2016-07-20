@@ -103,3 +103,30 @@ body.sidebar-is-open .content-container {
     right: 0;
   }
 }
+
+
+.chip {
+  display: inline-block;
+  padding: 4px 32px 4px 12px;
+  height: 28px;
+  box-sizing: border-box;
+  border-radius: 14px;
+  background: rgb(232, 232, 232);
+  position: relative;
+}
+
+.chip__delete {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  border-radius: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.chip__delete:hover {
+  background: rgb(190, 190, 190);
+}
