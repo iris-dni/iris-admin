@@ -10,6 +10,7 @@ That is the goal of “Project Iris”.
 The Admin UI is a browser-only web application that allows managing petitions
 and users.
 
+[![Build Status](https://travis-ci.org/iris-dni/iris-admin.svg?branch=master)](https://travis-ci.org/iris-dni/iris-admin)
 
 ### Resources
 

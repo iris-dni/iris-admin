@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { withRouter } from 'react-router';
+import Alert from 'components/alert';
 import Sidebar from 'components/sidebar';
+import { translate } from 'config/strings';
 
 
 export default withRouter(React.createClass({
@@ -14,6 +16,13 @@ export default withRouter(React.createClass({
   },
 
   render() {
+    if (!window.__swaggerClient) {
+      return (
+        <div className="container-fluid" style={{ margin: 80 }}>
+          <Alert message={translate('errors.swagger')} />
+        </div>
+      );
+    }
     return (
       <div>
         <Sidebar />
