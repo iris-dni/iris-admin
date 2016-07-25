@@ -4,6 +4,7 @@ import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import PetitionFinder from 'pages/petition-finder';
 import UserFinder from 'pages/user-finder';
+import UserEditor from 'pages/user-editor';
 import App from './app';
 import APIConstants from 'config/api';
 
@@ -14,6 +15,7 @@ function render() {
         <IndexRedirect to="petitions" />
         <Route path="petitions" component={PetitionFinder} />
         <Route path="users" component={UserFinder} />
+        <Route path="user/:id" component={UserEditor} />
       </Route>
     </Router>,
     document.getElementById('_root')
