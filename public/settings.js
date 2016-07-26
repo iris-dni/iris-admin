@@ -4,4 +4,4 @@
   global.iris.settings.swagger = {
     specUrl: '/swagger.json'
   };
-})(window);
+}(window));
