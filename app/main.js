@@ -6,7 +6,7 @@ import PetitionFinder from 'pages/petition-finder';
 import UserFinder from 'pages/user-finder';
 import UserEditor from 'pages/user-editor';
 import App from './app';
-import APIConstants from 'config/api';
+import settings from 'config/settings';
 
 function render() {
   ReactDOM.render(
@@ -23,7 +23,7 @@ function render() {
 }
 
 import initSwagger from 'api/swagger';
-initSwagger(`${APIConstants.SWAGGER_JSON}`, render);
+initSwagger(settings.swagger.specUrl, render);
 
 // show the sidebar on wide screens
 if (document.body.clientWidth > 768) {
