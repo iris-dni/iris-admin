@@ -2,9 +2,9 @@ import 'babel-polyfill';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
-import PetitionFinder from 'pages/petition-finder';
-import UserFinder from 'pages/user-finder';
-import UserEditor from 'pages/user-editor';
+import PetitionFinder from 'petition/finder';
+import UserFinder from 'user/finder';
+import UserEditor from 'user/editor';
 import App from './app';
 import settings from 'config/settings';
 
