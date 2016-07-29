@@ -1,10 +1,10 @@
-const path = require('path');
-const webpack = require('webpack');
+var path = require('path');
+var webpack = require('webpack');
 
 
-const isProduction = !!(process.argv.filter(a => a === '-p')).length;
+var isProduction = !!(process.argv.filter(function(a) { return a === '-p';})).length;
 
-const plugins = [];
+var plugins = [];
 
 if (isProduction) {
   plugins.push(new webpack.DefinePlugin({
@@ -19,8 +19,8 @@ if (isProduction) {
   }));
 }
 
-const APP_DIR = path.resolve(__dirname, 'app');
-const OUT_DIR = path.resolve(__dirname, 'public');
+var APP_DIR = path.resolve(__dirname, 'app');
+var OUT_DIR = path.resolve(__dirname, 'public');
 
 
 module.exports = {
