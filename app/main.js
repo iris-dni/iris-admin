@@ -7,10 +7,13 @@ import UserFinder from 'user/finder';
 import UserEditor from 'user/editor';
 import App from './app';
 import settings from 'config/settings';
+import LoginPage from 'auth/login';
+
 
 function render() {
   ReactDOM.render(
     <Router history={hashHistory}>
+      <Route path="/auth/login" component={LoginPage} />
       <Route path="/" component={App}>
         <IndexRedirect to="petitions" />
         <Route path="petitions" component={PetitionFinder} />

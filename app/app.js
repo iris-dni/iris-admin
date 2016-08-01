@@ -1,18 +1,16 @@
 import * as React from 'react';
-import { withRouter } from 'react-router';
 import Alert from 'components/alert';
 import Sidebar from 'components/sidebar';
 import { translate } from 'config/strings';
+import authenticated from 'auth';
 
 
-export default withRouter(React.createClass({
+export default authenticated(React.createClass({
   displayName: 'App',
 
   propTypes: {
     children: React.PropTypes.node,
-    router: React.PropTypes.shape({
-      push: React.PropTypes.func.isRequired,
-    }).isRequired,
+    me: React.PropTypes.object,
   },
 
   render() {
