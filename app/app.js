@@ -1,16 +1,29 @@
 import * as React from 'react';
+import { withRouter } from 'react-router';
 import Alert from 'components/alert';
 import Sidebar from 'components/sidebar';
 import { translate } from 'config/strings';
 import authenticated from 'auth';
+import storage from 'helpers/storage';
 
 
-export default authenticated(React.createClass({
+export default authenticated(withRouter(React.createClass({
   displayName: 'App',
 
   propTypes: {
     children: React.PropTypes.node,
     me: React.PropTypes.object,
+    router: React.PropTypes.shape({
+      replace: React.PropTypes.func.isRequired,
+    }).isRequired,
+  },
+
+  componentWillMount() {
+    const redirectUrl = storage.getItem('redirect-url');
+    storage.removeItem('redirect-url');
+    if (redirectUrl) {
+      this.props.router.replace(JSON.parse(redirectUrl));
+    }
   },
 
   render() {
@@ -30,4 +43,4 @@ export default authenticated(React.createClass({
       </div>
     );
   }
-}));
+})));
