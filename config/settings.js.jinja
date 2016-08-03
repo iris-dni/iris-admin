@@ -5,7 +5,7 @@
     specUrl: '{{ "http://" }}{{ config['containers']['iris-api-service']['url'] }}/swagger.json'
   };
   settings.ssoProviders = [
-    {%- for provider in config['containers']['iris-api-service']['sso_providers'] %}
+    {%- for provider in config['containers']['iris-api-service']['sso']['providers'] %}
     {
       name: '{{ provider['name']}}',
       loginUrl: '{{ provider['loginUrl'] }}'
