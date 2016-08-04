@@ -5,6 +5,7 @@ import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import PetitionFinder from 'petition/finder';
 import UserFinder from 'user/finder';
 import UserEditor from 'user/editor';
+import CityFinder from 'city/finder';
 import App from './app';
 import settings from 'config/settings';
 import LoginPage from 'auth/login';
@@ -19,6 +20,7 @@ function render() {
         <Route path="petitions" component={PetitionFinder} />
         <Route path="users" component={UserFinder} />
         <Route path="user/:id" component={UserEditor} />
+        <Route path="cities" component={CityFinder} />
       </Route>
     </Router>,
     document.getElementById('_root')
