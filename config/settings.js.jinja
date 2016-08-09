@@ -3,7 +3,7 @@
   global.iris = global.iris || {};
   settings = global.iris.settings = global.iris.settings || {};
   settings.swagger = {
-    specUrl: '{{ "//" }}{{ api['access']['url'] }}/swagger.json'
+    specUrl: '{{ context['api_proto'] }}{{ "://" }}{{ api['access']['url'] }}/swagger.json'
   };
   settings.ssoProviders = [
     {%- for provider in api['sso']['providers'] %}
