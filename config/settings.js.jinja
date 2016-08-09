@@ -1,11 +1,12 @@
+{%- set api = config['containers']['iris-api-service'] -%}
 (function (global) {
   global.iris = global.iris || {};
   settings = global.iris.settings = global.iris.settings || {};
   settings.swagger = {
-    specUrl: '{{ "http://" }}{{ config['containers']['iris-api-service']['url'] }}/swagger.json'
+    specUrl: '{{ "//" }}{{ api['access']['url'] }}/swagger.json'
   };
   settings.ssoProviders = [
-    {%- for provider in config['containers']['iris-api-service']['sso']['providers'] %}
+    {%- for provider in api['sso']['providers'] %}
     {
       name: '{{ provider['name']}}',
       loginUrl: '{{ provider['loginUrl'] }}'
