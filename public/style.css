@@ -148,3 +148,17 @@ body.sidebar-is-open .content-container {
    padding-bottom: 15px;
    padding-top: 15px;
 }
+
+
+.form-notification {
+  border-radius: 2px;
+  padding: 6px 8px;
+  background: rgb(221, 221, 221);
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.form-notification--error {
+  background: rgb(255, 88, 88);
+}
