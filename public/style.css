@@ -130,3 +130,21 @@ body.sidebar-is-open .content-container {
 .chip__delete:hover {
   background: rgb(190, 190, 190);
 }
+
+
+.card {
+  margin-bottom: 30px;
+  border: 1px solid rgb(224, 229, 233);
+}
+
+.card__title {
+  background-color: rgb(244, 249, 253);
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+
+.card__content {
+   padding-bottom: 15px;
+   padding-top: 15px;
+}
