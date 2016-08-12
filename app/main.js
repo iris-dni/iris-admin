@@ -3,6 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import PetitionFinder from 'petition/finder';
+import PetitionEditor from 'petition/editor';
 import UserFinder from 'user/finder';
 import UserEditor from 'user/editor';
 import CityFinder from 'city/finder';
@@ -18,6 +19,7 @@ function render() {
       <Route path="/" component={App}>
         <IndexRedirect to="petitions" />
         <Route path="petitions" component={PetitionFinder} />
+        <Route path="petition/:id" component={PetitionEditor} />
         <Route path="users" component={UserFinder} />
         <Route path="user/:id" component={UserEditor} />
         <Route path="cities" component={CityFinder} />
