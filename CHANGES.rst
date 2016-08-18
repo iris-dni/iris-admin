@@ -1,7 +1,11 @@
-# Changes for Iris Admin UI
+=========================
+Changes for Iris Admin UI
+=========================
 
-### Unreleased
+Unreleased
+==========
 
+- Petition Editor: state box
 - Petition Finder: title fulltext search
 - Petition Finder: filter by city
 - Petition Finder: filter by state
