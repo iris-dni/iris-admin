@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Editor: user box
+- Petition Editor: city communication box
 - Petition Editor: added status information strings
 - Petition Editor: state box
 - Petition Finder: title fulltext search

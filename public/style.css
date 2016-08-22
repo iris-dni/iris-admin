@@ -162,3 +162,11 @@ body.sidebar-is-open .content-container {
 .form-notification--error {
   background: rgb(255, 88, 88);
 }
+
+.form-notification--warning {
+  background: rgb(255, 182, 78);
+}
+
+.form-notificaiton--success {
+  background: rgb(44, 196, 168);
+}
