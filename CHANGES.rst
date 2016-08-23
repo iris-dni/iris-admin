@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Finder: react to querystring changes
+- Sidebar: predefined petition searches (pending, sendLetter, approveLetter)
 - Petition Editor: user box
 - Petition Editor: city communication box
 - Petition Editor: added status information strings
