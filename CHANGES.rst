@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Editor: images box
+- Petition Editor: mentions box
+- Petition Editor: urls box
 - Sidebar: change wording of petition state nav items
 - Petition Finder: react to querystring changes
 - Sidebar: predefined petition searches (pending, sendLetter, approveLetter)
