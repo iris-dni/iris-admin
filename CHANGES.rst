@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Finder: resolve city and owner
 - Petition Finder: adapt to new relation shape
 - Petition Editor: adapt to new relation shape
 - Petition Editor: images box
