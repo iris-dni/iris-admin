@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Editor: use real data for mentions + urls
 - Petition Finder: resolve city and owner
 - Petition Finder: adapt to new relation shape
 - Petition Editor: adapt to new relation shape
