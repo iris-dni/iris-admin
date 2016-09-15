@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Filter: add creation date column
+- Petition Editor: add creation date
 - Petition Editor: use real data for mentions + urls
 - Petition Finder: resolve city and owner
 - Petition Finder: adapt to new relation shape
