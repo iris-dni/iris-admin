@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Editor: fix og url
 - Petition Filter: wording of filter / sort
 - Petition Filter: add creation date column
 - Petition Editor: add creation date
