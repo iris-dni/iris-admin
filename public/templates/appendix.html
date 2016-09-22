@@ -1,0 +1,11 @@
+<h1>Appendix: List of Supporters</h1>
+<ul>
+  {% for supporter in supporters %}
+    <li>
+      {{ supporter.user.data.firstname }} {{ supporter.user.data.lastname }}
+      {% if supporter.phone_user.telephone %}
+        , {{ supporter.phone_user.telephone }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
