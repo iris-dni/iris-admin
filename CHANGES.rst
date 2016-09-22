@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Editor: generate appendix
 - Petition Editor: reset og
 - Petition Editor: fix og url
 - Petition Filter: wording of filter / sort
