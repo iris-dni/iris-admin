@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- set the required protocol for the swagger API
 - Petition Editor: reset og
 - Petition Editor: fix og url
 - Petition Filter: wording of filter / sort
