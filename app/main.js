@@ -4,7 +4,8 @@ import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import PetitionFinder from 'petition/finder';
 import PetitionEditor from 'petition/editor';
-import Appendix from 'petition/appendix';
+import LetterCover from 'petition/letter-cover';
+import LetterAppendix from 'petition/letter-appendix';
 import UserFinder from 'user/finder';
 import UserEditor from 'user/editor';
 import CityFinder from 'city/finder';
@@ -24,7 +25,8 @@ function render() {
         <Route path="users" component={UserFinder} />
         <Route path="user/:id" component={UserEditor} />
         <Route path="cities" component={CityFinder} />
-        <Route path="petition/:id/letter/appendix" component={Appendix} />
+        <Route path="petition/:id/letter/cover" component={LetterCover} />
+        <Route path="petition/:id/letter/appendix" component={LetterAppendix} />
       </Route>
     </Router>,
     document.getElementById('_root')
