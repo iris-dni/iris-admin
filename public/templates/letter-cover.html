@@ -1,2 +1,22 @@
-<h1>Cover</h1>
-<!--<img src="/img/logo.png" />-->
+<p>{{ petition.city.data.contact.address }}</p>
+
+<h1>{{ petition.title }}</h1>
+
+<p>{{ petition.city.data.contact.salutation }}</p>
+
+<p>{{ petition.city_answer.text }}</p>
+
+<ul>
+  <li>Created by: {{ petition.owner.data.firstname }} {{ petition.owner.data.lastname }}</li>
+  <li>Created: {{ petition.dc.created }}</li>
+  <li>Number of Supporters: {{ petition.supporters.amount }}</li>
+  <li>Supporters required: {{ petition.supporters.required }}</li>
+</ul>
+
+<h2>Problem</h2>
+<p>{{ petition.description }}</p>
+
+<h2>Proposal</h2>
+<p>{{ petition.suggested_solution }}</p>
+
+<p>Respose-Token: {{ petition.response_token }}</p>

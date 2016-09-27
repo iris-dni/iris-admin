@@ -18,6 +18,8 @@ function render() {
   ReactDOM.render(
     <Router history={hashHistory}>
       <Route path="/auth/login" component={LoginPage} />
+      <Route path="/petition/:id/letter/cover" component={LetterCover} />
+      <Route path="/petition/:id/letter/appendix" component={LetterAppendix} />
       <Route path="/" component={App}>
         <IndexRedirect to="petitions" />
         <Route path="petitions" component={PetitionFinder} />
@@ -25,8 +27,6 @@ function render() {
         <Route path="users" component={UserFinder} />
         <Route path="user/:id" component={UserEditor} />
         <Route path="cities" component={CityFinder} />
-        <Route path="petition/:id/letter/cover" component={LetterCover} />
-        <Route path="petition/:id/letter/appendix" component={LetterAppendix} />
       </Route>
     </Router>,
     document.getElementById('_root')
