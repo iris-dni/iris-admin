@@ -6,9 +6,9 @@
     "build": "webpack -p",
     "develop": "webpack --watch",
     "lint": "eslint 'app/**/*.js'",
-    "test": "mocha --require resources/test-setup-full.js './**/spec/*.js'",
-    "test:fn": "mocha --require resources/test-setup-es2015.js './**/spec/*.fn.js'",
-    "test:react": "mocha --require resources/test-setup-full.js './**/spec/*.react.js'",
+    "test": "mocha --require resources/test-setup-full.js 'app/**/spec/*.js'",
+    "test:fn": "mocha --require resources/test-setup-es2015.js 'app/**/spec/*.fn.js'",
+    "test:react": "mocha --require resources/test-setup-full.js 'app/**/spec/*.react.js'",
     "typings": "typings"
   },
   "babel": {
@@ -45,6 +45,7 @@
   "dependencies": {
     "lodash": "4.14.0",
     "moment": "^2.15.0",
+    "nunjucks": "^2.5.2",
     "react": "^15.2.1",
     "react-autocomplete": "^1.0.1",
     "react-dom": "^15.2.1",

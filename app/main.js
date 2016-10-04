@@ -4,6 +4,8 @@ import * as ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import PetitionFinder from 'petition/finder';
 import PetitionEditor from 'petition/editor';
+import LetterCover from 'petition/letter-cover';
+import LetterAppendix from 'petition/letter-appendix';
 import UserFinder from 'user/finder';
 import UserEditor from 'user/editor';
 import CityFinder from 'city/finder';
@@ -16,6 +18,8 @@ function render() {
   ReactDOM.render(
     <Router history={hashHistory}>
       <Route path="/auth/login" component={LoginPage} />
+      <Route path="/petition/:id/letter/cover" component={LetterCover} />
+      <Route path="/petition/:id/letter/appendix" component={LetterAppendix} />
       <Route path="/" component={App}>
         <IndexRedirect to="petitions" />
         <Route path="petitions" component={PetitionFinder} />
