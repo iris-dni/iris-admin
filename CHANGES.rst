@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- change page title dynamically (according to current page)
 - Petition Editor: generate letter cover and appendix
 - set the required protocol for the swagger API
 - Petition Editor: reset og
