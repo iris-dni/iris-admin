@@ -1,6 +1,6 @@
 {
   "name": "iris-admin",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "iris admin ui",
   "scripts": {
     "build": "webpack -p",
