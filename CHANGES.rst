@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- change page title dynamically (according to current page)
+
 2016/11/07 0.2.0
 ================
 

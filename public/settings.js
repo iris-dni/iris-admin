@@ -1,6 +1,9 @@
 (function (global) {
   global.iris = global.iris || {};
   global.iris.settings = global.iris.settings || {};
+  global.iris.settings.platform = {
+    name: 'Iris'
+  };
   global.iris.settings.swagger = {
     specUrl: 'http://api-iris-dev.lovelysystems.com/swagger.json'
   };
