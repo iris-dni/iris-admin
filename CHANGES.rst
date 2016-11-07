@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- Petition Editor: fix check if city is assigned to petition when approving
 - Petition Editor: generate letter cover and appendix
 - set the required protocol for the swagger API
 - Petition Editor: reset og
