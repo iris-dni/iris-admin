@@ -6,6 +6,7 @@ Unreleased
 ==========
 
 - change page title dynamically (according to current page)
+- display petition images
 
 2016/11/07 0.2.0
 ================
