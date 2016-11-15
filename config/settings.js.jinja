@@ -13,7 +13,7 @@
       }{%if not loop.last %},{% endif %}
     {%- endfor %}
   ];
-  global.iris.settings.platform = {
+  settings.platform = {
     name: "{{ context['platform']['name'] }}"
   };
 }(window));
