@@ -22,6 +22,11 @@ const predefinedPetitionSearches = [
     id: 'approveLetter',
     label: 'Pending Petition Feedback ($1)',
     state: ['processing.letterResponseArrived']
+  },
+  {
+    id: 'noletterresponse',
+    label: 'No Letter Response ($1)',
+    state: ['processing.noLetterResponse']
   }
 ];
 

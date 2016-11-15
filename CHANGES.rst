@@ -6,6 +6,7 @@ Unreleased
 ==========
 
 - change wording of states (processing, processing.sendLetterRequested)
+- added noLetterResponse filters and sidebar entry
 - change page title dynamically (according to current page)
 - display petition images
 
