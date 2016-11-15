@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- change wording of states (processing, processing.sendLetterRequested)
 - change page title dynamically (according to current page)
 - display petition images
 
