@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2016/11/21 0.3.0
+================
+
 - change wording of states (processing, processing.sendLetterRequested)
 - added noLetterResponse filters and sidebar entry
 - change page title dynamically (according to current page)
