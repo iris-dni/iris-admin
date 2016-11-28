@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- letter cover is public available
+
 2016/11/21 0.3.0
 ================
 
