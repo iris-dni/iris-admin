@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+- petition editor: show all available user data
+
 2016/11/29 0.4.0
 ================
 
