@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2016/12/13 0.4.1
+================
+
 - petition editor: auto save city before triggering a transition
 - petition editor: show all available user data
 
