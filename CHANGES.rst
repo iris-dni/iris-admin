@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+ - modify and style letter templates (appendix and cover)
+
 2016/12/13 0.4.1
 ================
 
