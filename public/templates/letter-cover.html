@@ -1,22 +1,86 @@
-<p>{{ petition.city.data.contact.address }}</p>
-
-<h1>{{ petition.title }}</h1>
-
-<p>{{ petition.city.data.contact.salutation }}</p>
-
-<p>{{ petition.city_answer.text }}</p>
-
-<ul>
-  <li>Created by: {{ petition.owner.data.firstname }} {{ petition.owner.data.lastname }}</li>
-  <li>Created: {{ petition.dc.created }}</li>
-  <li>Number of Supporters: {{ petition.supporters.amount }}</li>
-  <li>Supporters required: {{ petition.supporters.required }}</li>
-</ul>
-
-<h2>Problem</h2>
-<p>{{ petition.description }}</p>
-
-<h2>Proposal</h2>
-<p>{{ petition.suggested_solution }}</p>
-
-<p>Respose-Token: {{ petition.response_token }}</p>
+<article class="letter letter-cover">
+  <header class="m-bottom--l">
+    <div class="row relative m-bottom">
+      <div class="col-xs-8">
+        <div class="council-address">
+          <p class="text-uppercase m-bottom">Einschreiben</p>
+          <p>
+            {{ petition.city.data.contact.address }}
+          </p>
+        </div>
+      </div>
+      <div class="platform-details">
+        <aside>
+          <img class="brand-logo" src="./petitio-logo.svg" alt="Petitio" />
+          <p>
+            Partner von<br />{{ petition.city.data.portal.title }}<br />Neumattstrasse 1<br />5001 Aarau
+          </p>
+        </aside>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-8">
+        <p>
+          {{ petition.city.data.name }}, {{ date }}
+        </p>
+      </div>
+    </div>
+  </header>
+  <div class="copy m-bottom--l">
+    <p>
+      <strong>Petition: {{ petition.title }}</strong>
+    </p>
+    <p>
+      {{ petition.city.data.contact.salutation }}
+    </p>
+    <p>
+      Auf petitio.ch ist eine Petition eingegangen, die Ihre Gemeinde betrifft. Alle Petitionen, die eine entsprechende Stimmenanzahl
+      erreicht haben (im Fall von {{ petition.city.data.name }} sind es {{ petition.supporters.required }}) übergeben wir
+      in Form dieses Briefes dem Adressaten.
+    </p>
+    <p class="m-bottom">
+      {{ petition.owner.data.firstname }} {{ petition.owner.data.lastname }} hat für das Anliegen <em>{{ petition.title }}</em> 
+      in 30 Tagen {{ petition.supporters.amount }} Stimmen gesammelt. Wir bitten Sie oder die zuständige Person höflich,
+      diese Petition zur Kenntnis zu nehmen und <strong>innerhalb der nächsten 30 Tagen</strong> zu beantworten. Das können
+      Sie ganz einfach <strong>direkt über folgende URL</strong> in Ihrem Browser:
+    </p>
+    <p class="text-center f-large m-bottom">
+      https://petitio.ch/respond/{{ petition.response_token }}
+    </p>
+    <p>
+      Mit einer offiziellen Antwort, in der Sie auf das Anliegen des Petitionärs eingehen, unterstreichen Sie, dass Sie die Belange
+      der einzelnen Bürger ernst nehmen und fördern damit Bürgernähe.
+    </p>
+    <p>
+      Mit freundlichen Grüssen
+    </p>
+    <p class="m-bottom--zero">
+      Petitio<br />Partner von {{ petition.city.data.portal.title }}
+    </p>
+  </div>
+  <div class="copy avoid-new-page--before">
+    <span>Beilagen:</span>
+    <ul class="list-bullets">
+      <li>Petitionstext zur Petition <em>{{ petition.title }}</em></li>
+      <li>Liste der Unterstützenden</li>
+    </ul>
+  </div>
+</article>
+<article class="letter letter-petition start-new-page">
+  <div class="copy">
+    <h2>Petitionstext zur Petition:</h2>
+    <p class="m-bottom">{{ petition.title }}</p>
+    <h2>Petitionärin/Petitionär:</h2>
+    <p class="m-bottom">
+      {{ petition.owner.data.firstname }} {{ petition.owner.data.lastname }}<br />{{ petition.owner.data.street }}<br />{{ petition.owner.data.zip }} {{ petition.owner.data.town }}
+    </p>
+    <h2>Beschreibung zur Petition:</h2>
+    <p class="m-bottom">
+      {{ petition.description }}
+    </p>
+    <h2>Lösungsvorschlag zur Petition:</h2>
+    <p class="m-bottom">
+      {{ petition.suggested_solution }}
+    </p>
+  </div>
+</article>

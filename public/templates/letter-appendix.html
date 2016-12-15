@@ -1,8 +1,12 @@
-<h1>Appendix: List of Supporters</h1>
-<ul>
-  {% for supporter in supporters %}
-    <li>
-      {{ supporter.user.data.firstname }} {{ supporter.user.data.lastname }} {{ supporter.phone_user.telephone }}
-    </li>
-  {% endfor %}
-</ul>
+<article class="letter letter-cover">
+  <div class="copy">
+    <h2>Liste der Unterstützenden:</h2>
+    <ul class="supporters-list">
+      {% for supporter in supporters %}
+      <li>
+        {{ supporter.user.data.firstname }} {{ supporter.user.data.lastname }} &mdash; {{ supporter.phone_user.telephone }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

@@ -170,3 +170,94 @@ body.sidebar-is-open .content-container {
 .form-notificaiton--success {
   background: rgb(44, 196, 168);
 }
+
+.letter {
+  color: #222;
+  font: 14px/1.35 "Open Sans", sans-serif;
+  padding: 1% 40px;
+}
+
+.platform-details {
+  bottom: 0;
+  left: 66.66667%;
+  padding-left: 15px;
+  position: absolute;
+}
+
+.council-address {
+  padding-top: 130px;
+}
+
+.brand-logo {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: 100px;
+}
+
+.relative {
+  position: relative;
+}
+
+.m-bottom {
+  margin-bottom: 30px !important;
+}
+
+.m-bottom--l {
+  margin-bottom: 60px !important;
+}
+
+.m-bottom--zero {
+  margin-bottom: 0 !important;
+}
+
+.list-bullets {
+  list-style: disc !important;
+  margin-top: 5px;
+}
+
+.f-large {
+  font-size: 18px;
+}
+
+.avoid-new-page--after {
+  page-break-after: avoid;
+}
+
+.avoid-new-page--before {
+  page-break-before: avoid;
+}
+
+.start-new-page {
+  page-break-before: always;
+}
+
+.copy p {
+  margin-bottom: 15px;
+}
+
+.copy h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.copy ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.copy li {
+  margin-bottom: 3px;
+}
+
+.supporters-list {
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.supporters-list li {
+  display: inline-block;
+  margin-bottom: 3px;
+  width: 48%;
+}
