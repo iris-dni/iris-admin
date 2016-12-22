@@ -187,6 +187,9 @@ body.sidebar-is-open .content-container {
 .council-address {
   padding-top: 130px;
 }
+.preserve-linebreaks {
+  white-space: pre-wrap;
+}
 
 .brand-logo {
   display: inline-block;
