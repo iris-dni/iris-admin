@@ -5,6 +5,7 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+ - Petition Letter & Appendix: Fix minor issues; use 'public supporters API'
  - Add robots.txt: disallow all
  - authentication: add flag to allow public access
  - modify and style letter templates (appendix and cover)

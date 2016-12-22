@@ -4,7 +4,7 @@
     <ul class="supporters-list">
       {% for supporter in supporters %}
       <li>
-        {{ supporter.user.data.firstname }} {{ supporter.user.data.lastname }} &mdash; {{ supporter.phone_user.telephone }}
+        {{ supporter.user.firstname }} {{ supporter.user.lastname }} &mdash; {{ supporter.user.mobile }}
       </li>
       {% endfor %}
     </ul>
