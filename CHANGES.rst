@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2016/12/23 0.5.0
+================
+
  - Petition Letter & Appendix: Fix minor issues; use 'public supporters API'
  - Add robots.txt: disallow all
  - authentication: add flag to allow public access
