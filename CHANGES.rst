@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+ - Petition Finder: show owner info (if available)
+
 2016/12/23 0.5.0
 ================
 
