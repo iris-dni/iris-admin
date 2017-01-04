@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2017/01/04 0.5.1
+================
+
  - bugfix letter-appendix: get all supporters from api
  - Petition Finder: show owner info (if available)
 
