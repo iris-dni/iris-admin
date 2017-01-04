@@ -64,4 +64,3 @@ Unreleased
 - Petition Finder: filter by city
 - Petition Finder: filter by state
 - Petition Finder: sort by creation date, trending, amount of supporters
-
