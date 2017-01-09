@@ -11,7 +11,7 @@
         <aside>
           <img class="brand-logo" src="./petitio-logo.svg" alt="Petitio" />
           <p>
-            Partner der<br />{{ petition.city.data.portal.title }}<br />Neumattstrasse 1<br />5001 Aarau
+            Partner von<br />{{ petition.city.data.portal.title }}<br />Neumattstrasse 1<br />5001 Aarau
           </p>
         </aside>
       </div>
@@ -37,7 +37,7 @@
       in Form dieses Briefes dem Adressaten.
     </p>
     <p class="m-bottom">
-      {{ petition.owner.data.firstname }} {{ petition.owner.data.lastname }} hat für das Anliegen <em>{{ petition.title }}</em> 
+      {{ petition.owner.firstname }} {{ petition.owner.lastname }} hat für das Anliegen <em>{{ petition.title }}</em> 
       in 30 Tagen {{ petition.supporters.amount }} Stimmen gesammelt. Wir bitten Sie oder die zuständige Person höflich,
       diese Petition zur Kenntnis zu nehmen und <strong>innerhalb der nächsten 30 Tagen</strong> zu beantworten. Das können
       Sie ganz einfach <strong>direkt über folgende URL</strong> in Ihrem Browser:
@@ -53,7 +53,7 @@
       Mit freundlichen Grüssen
     </p>
     <p class="m-bottom--zero">
-      Petitio<br />Partner der {{ petition.city.data.portal.title }}
+      Petitio<br />Partner von {{ petition.city.data.portal.title }}
     </p>
   </div>
   <div class="copy avoid-new-page--before">
