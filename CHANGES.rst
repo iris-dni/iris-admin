@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+ - fix letter template (owner name, partner)
+
 2017/01/04 0.5.1
 ================
 
