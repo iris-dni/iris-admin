@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2017/01/18 0.5.3
+================
+
  - petition: show city sender
 
 2017/01/10 0.5.2
