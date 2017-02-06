@@ -6,6 +6,9 @@ import { translate } from 'config/strings';
 import authenticated from 'auth';
 import storage from 'helpers/storage';
 import PetitionAPI from 'petition/api';
+import { CITY_PORTAL_PARAM, CITY_PORTAL_CLEAR_FILTER } from 'petition/api';
+import { retrieveCityPortalId } from 'petition/api';
+
 
 const predefinedPetitionSearches = [
   {
@@ -30,18 +33,27 @@ const predefinedPetitionSearches = [
   }
 ];
 
-const searchPetitions = () => {
-  const promises = predefinedPetitionSearches.map(search => (
-    PetitionAPI.search({ state: search.state, limit: 0 }))
-  );
+
+const searchPetitions = (cityPortalId) => {
+  const promises = predefinedPetitionSearches.map(search => {
+    const params = { state: search.state, limit: 0 };
+    if (cityPortalId !== CITY_PORTAL_CLEAR_FILTER) {
+      params[CITY_PORTAL_PARAM] = cityPortalId;
+    }
+    return PetitionAPI.search(params);
+  });
   return Promise.all(promises);
 };
+
 
 export default authenticated(withRouter(React.createClass({
   displayName: 'App',
 
   propTypes: {
     children: React.PropTypes.node,
+    location: React.PropTypes.shape({
+      query: React.PropTypes.object.isRequired,
+    }).isRequired,
     me: React.PropTypes.object,
     router: React.PropTypes.shape({
       replace: React.PropTypes.func.isRequired,
@@ -50,6 +62,7 @@ export default authenticated(withRouter(React.createClass({
 
   getInitialState() {
     return {
+      cityPortalId: retrieveCityPortalId(this.props.location).id,
       petitionTotals: []
     };
   },
@@ -61,7 +74,20 @@ export default authenticated(withRouter(React.createClass({
       this.props.router.replace(JSON.parse(redirectUrl));
     }
 
-    searchPetitions().then(results => {
+    this._updatePetitionsTotals();
+  },
+
+  componentWillReceiveProps(nextProps) {
+    // (re)fetch the 'petitions totals' if a new 'city portal id' was set
+    const currentCityPortalId = this.state.cityPortalId;
+    const nextCityPortalId = nextProps.location.query[CITY_PORTAL_PARAM];
+    if (currentCityPortalId !== nextCityPortalId) {
+      this.setState({ cityPortalId: nextCityPortalId }, this._updatePetitionsTotals);
+    }
+  },
+
+  _updatePetitionsTotals() {
+    searchPetitions(this.state.cityPortalId).then(results => {
       this.setState({ petitionTotals: results.map(result => result.total) });
     }).catch((error) => {
       // fail silently, we just lose the amounts in the navigation bar
