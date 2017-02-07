@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2017/02/07 0.5.4
+================
+
  - Petitions finder: add 'domain filter'
    DEPLOY:
     requires iris-service upgrade (introducing 'city.portal.id' filter)
