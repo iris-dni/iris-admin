@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+ - Petitions finder: change wording to 'Brand'
+
 2017/02/07 0.5.4
 ================
 
