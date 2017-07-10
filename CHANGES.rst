@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2017/07/10 0.5.6
+================
+
  - Cover Letter: remove "Einschreiben"
 
 2017/02/07 0.5.5
