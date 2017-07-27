@@ -5,6 +5,9 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+2017/07/27 0.6.0
+================
+
  - fix "Set Feedback" transition
 
 2017/07/10 0.5.6
