@@ -51,6 +51,6 @@
     "react-dom": "^15.2.1",
     "react-helmet": "^3.2.1",
     "react-router": "^2.5.2",
-    "swagger-client": "git+https://github.com/lovelysystems/swagger-js.git#eef10f922"
+    "swagger-client": "^2.1.20"
   }
 }

@@ -5,11 +5,11 @@
     name: 'Iris'
   };
   global.iris.settings.swagger = {
-    specUrl: 'http://api-iris-dev.lovelysystems.com/swagger.json'
+    specUrl: 'https://api.petitiodev.lovelysystems.com/swagger.json'
   };
   global.iris.settings.ssoProviders = [
     {
-      loginUrl: 'http://aaz-azdev.lovelysystems.com/anmelden',
+      loginUrl: 'https://aaz.azdev.lovelysystems.com/anmelden',
       name: 'AZ Dev'
     }
   ];

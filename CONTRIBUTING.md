@@ -83,3 +83,28 @@ execute:
 ```sh
 $ npm run typings -- install
 ```
+
+
+## Deployment
+
+### Tag the release
+
+Before creating a new distribution, a new version and tag should be created:
+
+- Update the ``CHANGES.rst`` file and create the top paragraph for your version
+- Commit your changes with a message like "prepare release x.y.z"
+- Push to origin
+- Create a tag by running ``./gradlew createTag``
+
+### Build the docker image::
+
+```
+./gradlew buildDockerImage
+```
+
+Push the docker image::
+
+```
+./gradlew pushDockerDevImage
+```
+

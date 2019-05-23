@@ -5,6 +5,8 @@ Changes for Iris Admin UI
 Unreleased
 ==========
 
+ - new style dockerized app
+
 2017/07/27 0.6.0
 ================
 

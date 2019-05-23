@@ -9,3 +9,7 @@ node_modules/
 !app/node_modules/
 
 typings/
+
+.gradle/
+build/
+VERSION.txt
