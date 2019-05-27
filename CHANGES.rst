@@ -2,8 +2,8 @@
 Changes for Iris Admin UI
 =========================
 
-Unreleased
-==========
+2019/05/27 1.0.0
+================
 
  - new style dockerized app
 
