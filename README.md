@@ -11,8 +11,6 @@
 > API it talks to, must be assumed to contain unpatched security
 > vulnerabilities. Do not run it as a public service; it handles personal data.
 > If you operate a deployment based on this code, take it offline.
->
-> Security contact: hello@lovelysystems.com
 
 There are many topics that local communities regard as particularly pressing,
 but journalists usually only discover them by accident. This problem inspired
